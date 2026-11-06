@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kiến trúc &amp; Nội thất</title>
+<meta name="description" content="" />
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #f5f2ed; }
+  .wf-root { font-family: var(--font-body); }
+  .wf-root h1, .wf-root h2, .wf-root h3, .wf-root .wf-head { font-family: var(--font-head); }
+  .wf-root details summary::-webkit-details-marker { display: none; }
+  .wf-root details[open] .wf-plus { transform: rotate(45deg); }
+  .wf-float { position: fixed; right: 20px; bottom: 20px; z-index: 60; }
+  [data-wf-fx] [data-reveal] { transition: opacity .9s cubic-bezier(.2,.65,.3,1), transform .9s cubic-bezier(.2,.65,.3,1); transition-delay: var(--rd, 0ms); }
+  [data-wf-fx="fade"] [data-reveal]:not(.is-in) { opacity: 0; }
+  [data-wf-fx="up"] [data-reveal]:not(.is-in) { opacity: 0; transform: translateY(36px); }
+  [data-wf-fx="zoom"] [data-reveal]:not(.is-in) { opacity: 0; transform: scale(.94); }
+  [data-wf-px] [data-wf-parallax] { transform: translate3d(0, var(--py, 0px), 0) scale(1.2); will-change: transform; }
+  @media (prefers-reduced-motion: reduce) { [data-wf-fx] [data-reveal] { transition: none !important; opacity: 1 !important; transform: none !important; } [data-wf-px] [data-wf-parallax] { transform: none !important; } }
+</style>
+</head>
+<body>
+<div class="@container wf-root bg-[color:var(--bg)] text-[color:var(--text)] min-h-screen" style="--bg:#f5f2ed;--surface:#ece7e0;--text:#1c1c1c;--muted:#6b6a68;--primary:#9b8366;--on-primary:#f5f2ed;--accent:#dbd3c7;--line:#c3bfb6;--radius:0px;--font-head:"Playfair Display", serif;--font-body:"Be Vietnam Pro", sans-serif" data-wf-fx="up" data-wf-px>
+<header class="sticky top-0 z-30 border-b border-[color:var(--line)]" style="background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(12px);"><div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-6"><a href="index.html" class="wf-head font-bold tracking-tight text-xl text-[color:var(--text)]">NH ARCHITECTURE</a><nav class="hidden @3xl:flex items-center gap-8 text-sm font-medium"><a href="#gioi-thieu" class="text-[color:var(--muted)] transition-opacity duration-300 hover:opacity-60">Giới thiệu</a><a href="#dich-vu" class="text-[color:var(--muted)] transition-opacity duration-300 hover:opacity-60">Dịch vụ</a><a href="#du-an" class="text-[color:var(--muted)] transition-opacity duration-300 hover:opacity-60">Dự án</a><a href="#lien-he" class="text-[color:var(--muted)] transition-opacity duration-300 hover:opacity-60">Liên hệ</a></nav><div class="flex items-center gap-2"><a href="#lien-he" class="hidden @3xl:inline-flex px-5 py-2.5 text-sm font-semibold bg-[color:var(--primary)] text-[color:var(--on-primary)] rounded-[var(--radius)] transition-all duration-300 hover:scale-[1.02]">Nhận tư vấn</a><button type="button" data-wf="menu" aria-label="Mở menu" class="@3xl:hidden p-2 text-[color:var(--text)]"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button></div></div><div data-wf-menu="" class="hidden @3xl:!hidden border-t border-[color:var(--line)] px-6 py-3 space-y-1"><a href="#gioi-thieu" class="block py-2 text-[color:var(--text)]">Giới thiệu</a><a href="#dich-vu" class="block py-2 text-[color:var(--text)]">Dịch vụ</a><a href="#du-an" class="block py-2 text-[color:var(--text)]">Dự án</a><a href="#lien-he" class="block py-2 text-[color:var(--text)]">Liên hệ</a><a href="#lien-he" class="mt-2 flex justify-center px-5 py-3 font-semibold bg-[color:var(--primary)] text-[color:var(--on-primary)] rounded-[var(--radius)]">Nhận tư vấn</a></div></header><section class="relative min-h-[560px] flex items-center overflow-hidden"><img src="images/anh-01.webp" alt="" class="object-cover absolute inset-0 w-full h-full" data-wf-parallax=""><div class="absolute inset-0 bg-black/55"></div><div class="relative max-w-6xl mx-auto px-6 py-24 text-white"><p class="uppercase tracking-[0.25em] text-xs font-semibold mb-5 text-white/80">Kiến trúc · Nội thất · Thi công</p><h1 class="text-4xl @3xl:text-6xl font-bold tracking-tight leading-[1.1] max-w-3xl">Kiến tạo không gian – Nâng tầm cuộc sống</h1><p class="mt-6 text-lg text-white/80 max-w-xl">Thiết kế kiến trúc và nội thất trọn gói cho nhà phố, biệt thự, căn hộ và công trình thương mại.</p><div class="mt-10 flex flex-wrap gap-3 "><a href="#lien-he" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold bg-[color:var(--primary)] text-[color:var(--on-primary)] rounded-[var(--radius)] transition-all duration-300 hover:scale-[1.02] hover:opacity-90">Nhận tư vấn <span aria-hidden="true">→</span></a><a href="#gioi-thieu" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold border border-[color:var(--line)] text-[color:var(--text)] rounded-[var(--radius)] transition-all duration-300 hover:scale-[1.02]">Xem dự án</a></div></div></section><section id="gioi-thieu" class="py-20 @3xl:py-28 bg-[color:var(--surface)]"><div class="max-w-6xl mx-auto px-6 grid @3xl:grid-cols-2 gap-12 @5xl:gap-20 items-center"><img src="images/anh-02.webp" alt="" class="object-cover w-full aspect-[4/3] rounded-[var(--radius)] "><div><p class="uppercase tracking-[0.25em] text-xs font-semibold mb-4 text-[color:var(--primary)]">Kts.Nguyễn Văn Hướng</p><h2 class="text-3xl @3xl:text-5xl font-bold tracking-tight leading-tight text-[color:var(--text)]">Hạnh phúc bắt đầu từ một không gian sống đúng nghĩa.</h2><div class="mt-6 space-y-4"></div></div></div></section><section id="dich-vu" class="py-20 @3xl:py-28 bg-[color:var(--bg)]"><div class="max-w-6xl mx-auto px-6"><div class="text-center mx-auto max-w-2xl mb-14"><p class="uppercase tracking-[0.25em] text-xs font-semibold mb-4 text-[color:var(--primary)]">Dịch vụ</p><h2 class="text-3xl @3xl:text-5xl font-bold tracking-tight leading-tight text-[color:var(--text)]">Giải pháp trọn gói</h2><p class="mt-5 text-lg leading-relaxed text-[color:var(--muted)]">Mô tả ngắn về các dịch vụ chính.</p></div><div class="grid gap-6 @3xl:grid-cols-2"><div class="flex flex-col p-8 border border-[color:var(--line)] bg-[color:var(--surface)] rounded-[var(--radius)] transition-all duration-300 hover:shadow-xl"><div class="w-12 h-12 grid place-items-center text-xl mb-6 bg-[color:var(--primary)] text-[color:var(--on-primary)] rounded-[var(--radius)]">▲</div><h3 class="text-xl font-bold tracking-tight text-[color:var(--text)]">Thiết kế kiến trúc</h3><p class="mt-3 leading-relaxed text-[color:var(--muted)]">Phương án công năng, mặt đứng và hồ sơ kỹ thuật đầy đủ.</p><div class="mt-auto pt-6"><div class="pt-5 border-t border-[color:var(--line)]"><p class="text-xs uppercase tracking-widest mb-2 text-[color:var(--primary)]">Bảng giá</p><table class="w-full text-sm"><tbody><tr class="border-b border-[color:var(--line)] last:border-0"><td class="py-3 pr-3 align-top"><span class="block font-medium text-[color:var(--text)]">Gói cơ bản</span><span class="block mt-0.5 text-xs text-[color:var(--muted)]">Mặt bằng công năng, phối cảnh mặt tiền</span></td><td class="py-3 text-right align-top whitespace-nowrap"><span class="font-semibold text-[color:var(--text)]">90.000đ</span><span class="block text-xs text-[color:var(--muted)]">/ m² sàn</span></td></tr><tr class="border-b border-[color:var(--line)] last:border-0"><td class="py-3 pr-3 align-top"><span class="block font-medium text-[color:var(--text)]">Gói tiêu chuẩn</span><span class="block mt-0.5 text-xs text-[color:var(--muted)]">Thêm hồ sơ kết cấu, điện nước</span></td><td class="py-3 text-right align-top whitespace-nowrap"><span class="font-semibold text-[color:var(--text)]">120.000đ</span><span class="block text-xs text-[color:var(--muted)]">/ m² sàn</span></td></tr><tr class="border-b border-[color:var(--line)] last:border-0"><td class="py-3 pr-3 align-top"><span class="block font-medium text-[color:var(--text)]">Gói cao cấp</span><span class="block mt-0.5 text-xs text-[color:var(--muted)]">Trọn bộ hồ sơ + giám sát tác giả</span></td><td class="py-3 text-right align-top whitespace-nowrap"><span class="font-semibold text-[color:var(--text)]">180.000đ</span><span class="block text-xs text-[color:var(--muted)]">/ m² sàn</span></td></tr></tbody></table></div></div></div><div class="flex flex-col p-8 border border-[color:var(--line)] bg-[color:var(--surface)] rounded-[var(--radius)] transition-all duration-300 hover:shadow-xl"><div class="w-12 h-12 grid place-items-center text-xl mb-6 bg-[color:var(--primary)] text-[color:var(--on-primary)] rounded-[var(--radius)]">■</div><h3 class="text-xl font-bold tracking-tight text-[color:var(--text)]">Thiết kế nội thất</h3><p class="mt-3 leading-relaxed text-[color:var(--muted)]">Concept, phối cảnh 3D và triển khai chi tiết đồ gỗ.</p><div class="mt-auto pt-6"><div class="pt-5 border-t border-[color:var(--line)]"><p class="text-xs uppercase tracking-widest mb-2 text-[color:var(--primary)]">Bảng giá</p><table class="w-full text-sm"><tbody><tr class="border-b border-[color:var(--line)] last:border-0"><td class="py-3 pr-3 align-top"><span class="block font-medium text-[color:var(--text)]">Gói cơ bản</span><span class="block mt-0.5 text-xs text-[color:var(--muted)]">Concept và phối cảnh 3D</span></td><td class="py-3 text-right align-top whitespace-nowrap"><span class="font-semibold text-[color:var(--text)]">150.000đ</span><span class="block text-xs text-[color:var(--muted)]">/ m² sàn</span></td></tr><tr class="border-b border-[color:var(--line)] last:border-0"><td class="py-3 pr-3 align-top"><span class="block font-medium text-[color:var(--text)]">Gói tiêu chuẩn</span><span class="block mt-0.5 text-xs text-[color:var(--muted)]">Thêm bản vẽ triển khai đồ gỗ</span></td><td class="py-3 text-right align-top whitespace-nowrap"><span class="font-semibold text-[color:var(--text)]">180.000đ</span><span class="block text-xs text-[color:var(--muted)]">/ m² sàn</span></td></tr><tr class="border-b border-[color:var(--line)] last:border-0"><td class="py-3 pr-3 align-top"><span class="block font-medium text-[color:var(--text)]">Gói cao cấp</span><span class="block mt-0.5 text-xs text-[color:var(--muted)]">Trọn bộ + chọn vật liệu cùng khách</span></td><td class="py-3 text-right align-top whitespace-nowrap"><span class="font-semibold text-[color:var(--text)]">210.000đ</span><span class="block text-xs text-[color:var(--muted)]">/ m² sàn</span></td></tr></tbody></table></div></div></div></div><p class="mt-8 text-sm italic text-[color:var(--muted)]">* Đơn giá tham khảo. Báo giá chính xác sau khi khảo sát và thống nhất phạm vi công việc.</p></div></section><section id="du-an" class="py-20 @3xl:py-28 bg-[color:var(--bg)]"><div class="max-w-6xl mx-auto px-6"><div class="max-w-3xl"><p class="uppercase tracking-wide text-xs mb-8 text-[color:var(--primary)]">Dự án</p><h2 class="text-4xl @3xl:text-5xl font-normal tracking-tight text-[color:var(--text)]">Công trình tiêu biểu</h2><p class="mt-8 leading-relaxed text-[color:var(--primary)]">Bấm vào từng dự án để xem toàn bộ hình ảnh.</p></div><div class="mt-10 flex flex-wrap gap-3"><button type="button" data-wf-filter="*" data-on="true" class="px-4 py-2.5 text-sm border border-[color:var(--line)] text-[color:var(--text)] rounded-[var(--radius)] transition-all duration-300 hover:border-[color:var(--text)] data-[on=true]:bg-[color:var(--text)] data-[on=true]:text-[color:var(--bg)] data-[on=true]:border-[color:var(--text)]">Tất cả</button><button type="button" data-wf-filter="Nhà phố" data-on="false" class="px-4 py-2.5 text-sm border border-[color:var(--line)] text-[color:var(--text)] rounded-[var(--radius)] transition-all duration-300 hover:border-[color:var(--text)] data-[on=true]:bg-[color:var(--text)] data-[on=true]:text-[color:var(--bg)] data-[on=true]:border-[color:var(--text)]">Nhà phố</button><button type="button" data-wf-filter="Nhà Phố" data-on="false" class="px-4 py-2.5 text-sm border border-[color:var(--line)] text-[color:var(--text)] rounded-[var(--radius)] transition-all duration-300 hover:border-[color:var(--text)] data-[on=true]:bg-[color:var(--text)] data-[on=true]:text-[color:var(--bg)] data-[on=true]:border-[color:var(--text)]">Nhà Phố</button><button type="button" data-wf-filter="Nhà ở" data-on="false" class="px-4 py-2.5 text-sm border border-[color:var(--line)] text-[color:var(--text)] rounded-[var(--radius)] transition-all duration-300 hover:border-[color:var(--text)] data-[on=true]:bg-[color:var(--text)] data-[on=true]:text-[color:var(--bg)] data-[on=true]:border-[color:var(--text)]">Nhà ở</button><button type="button" data-wf-filter="Căn Hộ" data-on="false" class="px-4 py-2.5 text-sm border border-[color:var(--line)] text-[color:var(--text)] rounded-[var(--radius)] transition-all duration-300 hover:border-[color:var(--text)] data-[on=true]:bg-[color:var(--text)] data-[on=true]:text-[color:var(--bg)] data-[on=true]:border-[color:var(--text)]">Căn Hộ</button></div><div class="mt-8 grid gap-x-8 gap-y-14 @xl:grid-cols-2"><a href="du-an/ls-house.html" data-wf-cat="Nhà phố" class="group block"><div class="overflow-hidden rounded-[var(--radius)]"><img src="images/anh-03.webp" alt="L'S HOUSE" class="object-cover w-full aspect-[16/11] transition-transform duration-700 group-hover:scale-105"></div><p class="mt-5 text-xs text-[color:var(--primary)]">Nhà phố</p><h3 class="mt-3 text-2xl @3xl:text-3xl font-normal tracking-tight text-[color:var(--text)]">L'S HOUSE</h3><p class="mt-3 text-[color:var(--primary)]">Phú Mỹ</p><div class="mt-4 grid grid-cols-2 text-xs text-[color:var(--muted)]"><span>2026</span><span>120 m²</span></div><span class="mt-4 inline-block text-xs font-medium text-[color:var(--text)] underline-offset-4 decoration-1 group-hover:underline">Xem chi tiết</span></a><a href="du-an/ns-house.html" data-wf-cat="Nhà Phố" class="group block"><div class="overflow-hidden rounded-[var(--radius)]"><img src="images/anh-04.webp" alt="N'S HOUSE" class="object-cover w-full aspect-[16/11] transition-transform duration-700 group-hover:scale-105"></div><p class="mt-5 text-xs text-[color:var(--primary)]">Nhà Phố</p><h3 class="mt-3 text-2xl @3xl:text-3xl font-normal tracking-tight text-[color:var(--text)]">N'S HOUSE</h3><p class="mt-3 text-[color:var(--primary)]">Hcm</p><div class="mt-4 grid grid-cols-2 text-xs text-[color:var(--muted)]"><span>2026</span><span>120 m²</span></div><span class="mt-4 inline-block text-xs font-medium text-[color:var(--text)] underline-offset-4 decoration-1 group-hover:underline">Xem chi tiết</span></a><a href="du-an/nha-vuon.html" data-wf-cat="Nhà ở" class="group block"><div class="overflow-hidden rounded-[var(--radius)]"><img src="images/anh-05.webp" alt="Nhà Vườn" class="object-cover w-full aspect-[16/11] transition-transform duration-700 group-hover:scale-105"></div><p class="mt-5 text-xs text-[color:var(--primary)]">Nhà ở</p><h3 class="mt-3 text-2xl @3xl:text-3xl font-normal tracking-tight text-[color:var(--text)]">Nhà Vườn</h3><p class="mt-3 text-[color:var(--primary)]">Bình Dương</p><div class="mt-4 grid grid-cols-2 text-xs text-[color:var(--muted)]"><span>2026</span><span>300 m2</span></div><span class="mt-4 inline-block text-xs font-medium text-[color:var(--text)] underline-offset-4 decoration-1 group-hover:underline">Xem chi tiết</span></a><a href="du-an/can-ho-dich-vu.html" data-wf-cat="Căn Hộ" class="group block"><div class="overflow-hidden rounded-[var(--radius)]"><img src="images/anh-06.webp" alt="Căn Hộ Dịch Vụ" class="object-cover w-full aspect-[16/11] transition-transform duration-700 group-hover:scale-105"></div><p class="mt-5 text-xs text-[color:var(--primary)]">Căn Hộ</p><h3 class="mt-3 text-2xl @3xl:text-3xl font-normal tracking-tight text-[color:var(--text)]">Căn Hộ Dịch Vụ</h3><p class="mt-3 text-[color:var(--primary)]">Quận 9</p><div class="mt-4 grid grid-cols-2 text-xs text-[color:var(--muted)]"><span>2026</span><span>400 m²</span></div><span class="mt-4 inline-block text-xs font-medium text-[color:var(--text)] underline-offset-4 decoration-1 group-hover:underline">Xem chi tiết</span></a></div></div></section><section id="lien-he" class="py-20 @3xl:py-28 bg-[color:var(--bg)]"><div class="max-w-6xl mx-auto px-6 grid @5xl:grid-cols-5 gap-10"><div class="@5xl:col-span-2"><p class="uppercase tracking-[0.25em] text-xs font-semibold mb-4 text-[color:var(--primary)]">Liên hệ</p><h2 class="text-3xl @3xl:text-5xl font-bold tracking-tight text-[color:var(--text)]">Liên hệ với chúng tôi</h2><p class="mt-5 text-lg text-[color:var(--muted)]">Để lại thông tin, chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p><dl class="mt-10 space-y-5"><div class="pl-4 border-l-2 border-[color:var(--primary)]"><dt class="text-xs uppercase tracking-widest text-[color:var(--muted)]">Địa chỉ</dt><dd class="mt-1 font-medium text-[color:var(--text)]">Trần Huy Liệu, Đất đỏ, TP.HCM</dd></div><div class="pl-4 border-l-2 border-[color:var(--primary)]"><dt class="text-xs uppercase tracking-widest text-[color:var(--muted)]">Điện thoại</dt><dd class="mt-1 font-medium text-[color:var(--text)]">0941872099</dd></div><div class="pl-4 border-l-2 border-[color:var(--primary)]"><dt class="text-xs uppercase tracking-widest text-[color:var(--muted)]">Email</dt><dd class="mt-1 font-medium text-[color:var(--text)]">nh.architecture.vt@gmail.vn</dd></div><div class="pl-4 border-l-2 border-[color:var(--primary)]"><dt class="text-xs uppercase tracking-widest text-[color:var(--muted)]">Giờ làm việc</dt><dd class="mt-1 font-medium text-[color:var(--text)]">Thứ 2 – Thứ 7: 8:00 – 17:30</dd></div></dl></div><form data-wf-form="" novalidate="" class="@5xl:col-span-3 p-8 border border-[color:var(--line)] bg-[color:var(--surface)] rounded-[var(--radius)] grid @xl:grid-cols-2 gap-4" data-wf-to="nh.architecture.vt@gmail.vn" data-wf-service="formsubmit" data-wf-key="" data-wf-subject="Yêu cầu tư vấn mới từ website"><label class="@xl:col-span-2 space-y-2"><span class="text-sm font-medium text-[color:var(--text)]">Họ và tên *</span><input required="" name="Họ và tên" class="w-full px-4 py-3 border border-[color:var(--line)] bg-[color:var(--bg)] text-[color:var(--text)] rounded-[var(--radius)] outline-none transition focus:border-[color:var(--primary)]" placeholder="Nguyễn Văn A"></label><label class="space-y-2"><span class="text-sm font-medium text-[color:var(--text)]">Số điện thoại *</span><input required="" name="Số điện thoại" type="tel" class="w-full px-4 py-3 border border-[color:var(--line)] bg-[color:var(--bg)] text-[color:var(--text)] rounded-[var(--radius)] outline-none transition focus:border-[color:var(--primary)]" placeholder="09xx xxx xxx"></label><label class="space-y-2"><span class="text-sm font-medium text-[color:var(--text)]">Email</span><input name="email" type="email" class="w-full px-4 py-3 border border-[color:var(--line)] bg-[color:var(--bg)] text-[color:var(--text)] rounded-[var(--radius)] outline-none transition focus:border-[color:var(--primary)]" placeholder="email@vidu.com"></label><label class="@xl:col-span-2 space-y-2"><span class="text-sm font-medium text-[color:var(--text)]">Loại công trình</span><select name="Loại công trình" class="w-full px-4 py-3 border border-[color:var(--line)] bg-[color:var(--bg)] text-[color:var(--text)] rounded-[var(--radius)] outline-none transition focus:border-[color:var(--primary)]"><option>Nhà phố</option><option>Biệt thự</option><option>Căn hộ</option><option>Văn phòng</option><option>Nhà hàng – Khách sạn</option><option>Khác</option></select></label><label class="@xl:col-span-2 space-y-2"><span class="text-sm font-medium text-[color:var(--text)]">Nội dung</span><textarea name="Nội dung" rows="4" class="w-full px-4 py-3 border border-[color:var(--line)] bg-[color:var(--bg)] text-[color:var(--text)] rounded-[var(--radius)] outline-none transition focus:border-[color:var(--primary)] resize-none" placeholder="Bạn cần chúng tôi hỗ trợ điều gì?"></textarea></label><p data-wf-msg="" class="@xl:col-span-2 text-sm min-h-[1.25rem]"></p><button type="submit" class="@xl:col-span-2 inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold bg-[color:var(--primary)] text-[color:var(--on-primary)] rounded-[var(--radius)] transition-all duration-300 hover:scale-[1.02] hover:opacity-90">Gửi yêu cầu</button></form></div></section><footer class="relative bg-[color:var(--text)] text-[color:var(--bg)]"><div class="max-w-6xl mx-auto px-6 py-16 space-y-6"><p class="wf-head text-4xl @3xl:text-5xl font-normal tracking-tight">NH ARCHITECTURE</p><p class="text-lg">Kiến tạo không gian – Nâng tầm cuộc sống.</p><p class="pt-2 opacity-60">Trần Huy Liệu, Đất đỏ, TP.HCM</p><p class="opacity-60 flex flex-wrap gap-x-4 gap-y-1"><span>Điện thoại : 0941872099</span><span aria-hidden="true">/</span><span>Thư điện tử : nh.architecture.vt@gmail.vn</span></p><div class="flex flex-wrap gap-x-4 gap-y-2 text-xs font-semibold"><a href="index.html" class="transition-opacity duration-300 hover:opacity-60">Facebook</a><a href="index.html" class="transition-opacity duration-300 hover:opacity-60">Instagram</a><a href="index.html" class="transition-opacity duration-300 hover:opacity-60">Zalo</a></div><p class="pt-2 text-xs opacity-60">© 2026 NH ARCHITECTURE. All rights reserved.</p></div></footer><div data-wf-lightbox="" class="hidden fixed inset-0 z-[200] bg-black/90 items-center justify-center p-4 @container"><button type="button" data-wf-lb="close" aria-label="Đóng" class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/10 text-white text-2xl leading-none transition hover:bg-white/20">×</button><button type="button" data-wf-lb="prev" aria-label="Ảnh trước" class="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 text-white text-2xl leading-none transition hover:bg-white/20">‹</button><figure class="max-w-6xl w-full text-center"><img data-wf-lb-img="" alt="" class="mx-auto max-h-[80vh] max-w-full object-contain"><figcaption class="mt-4 text-sm text-white/80"><span data-wf-lb-cap=""></span> <span data-wf-lb-count="" class="ml-2 text-white/50"></span></figcaption></figure><button type="button" data-wf-lb="next" aria-label="Ảnh sau" class="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 text-white text-2xl leading-none transition hover:bg-white/20">›</button></div>
+</div>
+<script>
+function wfLbShow(lb) {
+  var list = lb._wfList || [],
+    i = lb._wfIndex || 0;
+  if (!list.length) return;
+  var it = list[(i + list.length) % list.length];
+  lb.querySelector("[data-wf-lb-img]").src = it.getAttribute("src");
+  lb.querySelector("[data-wf-lb-cap]").textContent = it.getAttribute("data-wf-caption") || "";
+  lb.querySelector("[data-wf-lb-count]").textContent = list.length > 1 ? i % list.length + 1 + " / " + list.length : "";
+}
+function wfLbClose(lb) {
+  lb.classList.add("hidden");
+  lb.classList.remove("flex");
+}
+function wfLbStep(lb, d) {
+  var n = (lb._wfList || []).length;
+  if (!n) return;
+  lb._wfIndex = ((lb._wfIndex || 0) + d + n) % n;
+  wfLbShow(lb);
+}
+function wfKey(e) {
+  var lbs = document.querySelectorAll("[data-wf-lightbox]");
+  for (var i = 0; i < lbs.length; i++) {
+    var lb = lbs[i];
+    if (lb.classList.contains("hidden")) continue;
+    if (e.key === "Escape") {
+      wfLbClose(lb);
+      e.stopPropagation();
+    } else if (e.key === "ArrowRight") wfLbStep(lb, 1);else if (e.key === "ArrowLeft") wfLbStep(lb, -1);
+    return true;
+  }
+  return false;
+}
+function wfClick(e) {
+  var t = e.target;
+  if (!t || !t.closest) return false;
+  var ph = t.closest("[data-wf-photo]");
+  if (ph) {
+    var root = ph.closest(".wf-root") || document;
+    var lb = root.querySelector("[data-wf-lightbox]");
+    if (!lb) return false;
+    var g = ph.closest("[data-wf-gallery]");
+    var list = g ? Array.prototype.slice.call(g.querySelectorAll("[data-wf-photo]")) : [ph];
+    if (list.indexOf(ph) < 0) list = [ph];
+    lb._wfList = list;
+    lb._wfIndex = list.indexOf(ph);
+    wfLbShow(lb);
+    lb.classList.remove("hidden");
+    lb.classList.add("flex");
+    return true;
+  }
+  var btn = t.closest("[data-wf-lb]");
+  if (btn) {
+    var box = btn.closest("[data-wf-lightbox]"),
+      act = btn.getAttribute("data-wf-lb");
+    if (act === "close") wfLbClose(box);else wfLbStep(box, act === "next" ? 1 : -1);
+    return true;
+  }
+  if (t.hasAttribute && t.hasAttribute("data-wf-lightbox")) {
+    wfLbClose(t);
+    return true;
+  }
+  var fb = t.closest("[data-wf-filter]");
+  if (fb) {
+    var sec = fb.closest("section") || document;
+    var cat = fb.getAttribute("data-wf-filter");
+    var bs = sec.querySelectorAll("[data-wf-filter]");
+    for (var k = 0; k < bs.length; k++) bs[k].setAttribute("data-on", bs[k] === fb ? "true" : "false");
+    var cards = sec.querySelectorAll("[data-wf-cat]");
+    for (var c = 0; c < cards.length; c++) cards[c].style.display = cat === "*" || cards[c].getAttribute("data-wf-cat") === cat ? "" : "none";
+    return true;
+  }
+  var m = t.closest('[data-wf="menu"]');
+  if (m) {
+    var h = m.closest("header");
+    var p = h && h.querySelector("[data-wf-menu]");
+    if (p) p.classList.toggle("hidden");
+    return true;
+  }
+  return false;
+}
+function wfSubmit(e) {
+  var f = e.target;
+  if (!f || !f.hasAttribute || !f.hasAttribute("data-wf-form")) return;
+  e.preventDefault();
+  var msg = f.querySelector("[data-wf-msg]");
+  var req = f.querySelectorAll("[required]");
+  for (var i = 0; i < req.length; i++) {
+    if (!String(req[i].value || "").trim()) {
+      msg.textContent = "Vui lòng điền đầy đủ các trường bắt buộc (*).";
+      msg.style.color = "#b91c1c";
+      req[i].focus();
+      return;
+    }
+  }
+  var b = f.querySelector('button[type="submit"]');
+  var to = f.getAttribute("data-wf-to") || "";
+  var service = f.getAttribute("data-wf-service") || "formsubmit";
+  var key = f.getAttribute("data-wf-key") || "";
+  var subject = f.getAttribute("data-wf-subject") || "Liên hệ mới từ website";
+  var data = {};
+  var fields = f.querySelectorAll("input[name],textarea[name],select[name]");
+  for (var j = 0; j < fields.length; j++) data[fields[j].name] = fields[j].value;
+  var done = function () {
+    if (b) {
+      b.disabled = false;
+      b.style.opacity = "";
+    }
+  };
+  var ok = function () {
+    msg.textContent = "Cảm ơn bạn! Yêu cầu đã được gửi, chúng tôi sẽ liên hệ lại sớm nhất.";
+    msg.style.color = "#047857";
+    f.reset();
+    done();
+  };
+  var fail = function (note) {
+    done();
+    msg.textContent = "";
+    msg.style.color = "#b91c1c";
+    msg.appendChild(document.createTextNode(note || "Chưa gửi được qua website. "));
+    if (to) {
+      var lines = [];
+      for (var k in data) if (data[k]) lines.push(k + ": " + data[k]);
+      var a = document.createElement("a");
+      a.href = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+      a.textContent = "Bấm vào đây để gửi qua email tới " + to;
+      a.style.textDecoration = "underline";
+      a.style.fontWeight = "600";
+      msg.appendChild(a);
+    }
+  };
+  if (b) {
+    b.disabled = true;
+    b.style.opacity = ".6";
+  }
+  if (!to && !(service === "web3forms" && key)) {
+    setTimeout(function () {
+      msg.textContent = "Cảm ơn bạn! (Chưa cài email nhận – thông tin chưa được gửi đi)";
+      msg.style.color = "#b45309";
+      done();
+    }, 500);
+    return;
+  }
+  msg.textContent = "Đang gửi…";
+  msg.style.color = "";
+  var url,
+    payload = {};
+  for (var n in data) payload[n] = data[n];
+  if (service === "web3forms" && key) {
+    url = "https://api.web3forms.com/submit";
+    payload.access_key = key;
+    payload.subject = subject;
+    payload.from_name = document.title || "Website";
+    if (data.email) payload.replyto = data.email;
+  } else {
+    url = "https://formsubmit.co/ajax/" + encodeURIComponent(to);
+    payload._subject = subject;
+    payload._template = "table";
+    payload._captcha = "false";
+    if (data.email) payload._replyto = data.email;
+  }
+  try {
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(payload)
+    }).then(function (r) {
+      return r.json().catch(function () {
+        return {};
+      }).then(function (j) {
+        return {
+          r: r,
+          j: j
+        };
+      });
+    }).then(function (x) {
+      var success = x.r.ok && x.j.success !== false && x.j.success !== "false";
+      if (success) return ok();
+      var m = String(x.j.message || "");
+      if (/activat/i.test(m)) return fail("Biểu mẫu cần kích hoạt một lần: chủ website hãy mở hộp thư " + to + " và bấm Activate. ");
+      fail();
+    }, function () {
+      fail();
+    });
+  } catch (err) {
+    fail();
+  }
+}
+function wfReveal(root) {
+  var fx = root && root.getAttribute("data-wf-fx");
+  if (!fx || fx === "none" || !("IntersectionObserver" in window)) return function () {};
+  var SEL = "h1,h2,h3,p,a[data-wf-cat],blockquote,details,form,dl,figure,table,img,[data-wf-filter]";
+  var all = [].slice.call(root.querySelectorAll(SEL)).filter(function (el) {
+    return !el.closest("header,[data-wf-lightbox],.wf-float,[data-wf-parallax]") && !el.hasAttribute("data-wf-parallax") && !(el.parentElement && el.parentElement.closest(SEL));
+  });
+  var timers = [];
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var el = e.target;
+      el.classList.add("is-in");
+      io.unobserve(el);
+      timers.push(setTimeout(function () {
+        el.removeAttribute("data-reveal");
+        el.classList.remove("is-in");
+        el.style.removeProperty("--rd");
+      }, 1600));
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -6% 0px"
+  });
+  var count = new Map();
+  all.forEach(function (el) {
+    var p = el.parentElement,
+      i = count.get(p) || 0;
+    count.set(p, i + 1);
+    el.style.setProperty("--rd", Math.min(i, 5) * 90 + "ms");
+    el.style.transition = "none";
+    el.setAttribute("data-reveal", "");
+  });
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () {
+      all.forEach(function (el) {
+        el.style.transition = "";
+        io.observe(el);
+      });
+    });
+  });
+  return function () {
+    io.disconnect();
+    timers.forEach(clearTimeout);
+    all.forEach(function (el) {
+      el.removeAttribute("data-reveal");
+      el.classList.remove("is-in");
+      el.style.removeProperty("--rd");
+      el.style.transition = "";
+    });
+  };
+}
+function wfParallax(root) {
+  if (!root || !root.hasAttribute("data-wf-px")) return function () {};
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return function () {};
+  var ticking = false;
+  function upd() {
+    ticking = false;
+    var vh = window.innerHeight,
+      els = root.querySelectorAll("[data-wf-parallax]");
+    for (var i = 0; i < els.length; i++) {
+      var box = els[i].parentElement.getBoundingClientRect();
+      if (box.bottom < 0 || box.top > vh) continue;
+      els[i].style.setProperty("--py", ((box.top + box.height / 2 - vh / 2) * -0.12).toFixed(1) + "px");
+    }
+  }
+  function on() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(upd);
+    }
+  }
+  document.addEventListener("scroll", on, true);
+  window.addEventListener("resize", on);
+  upd();
+  return function () {
+    document.removeEventListener("scroll", on, true);
+    window.removeEventListener("resize", on);
+  };
+}
+var wfR=document.querySelector(".wf-root");wfReveal(wfR);wfParallax(wfR);
+document.addEventListener("click",wfClick);
+document.addEventListener("submit",wfSubmit,true);
+document.addEventListener("keydown",wfKey);
+</script>
+</body>
+</html>

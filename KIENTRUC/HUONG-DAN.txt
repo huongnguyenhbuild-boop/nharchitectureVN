@@ -1,0 +1,19 @@
+WEBSITE Kiến trúc & Nội thất
+
+=== CACH 1: GITHUB PAGES (mien phi) ===
+1. Dang nhap github.com > New repository > dat ten (vd: nharchitecture) > Public > Create repository.
+2. Bam 'uploading an existing file' > keo TAT CA file va thu muc trong ZIP (da giai nen) vao > Commit changes.
+3. Settings > Pages > Source: Deploy from a branch > Branch: main / (root) > Save.
+4. Sau 1-2 phut web chay tai https://<ten-tai-khoan>.github.io/<ten-repo>/
+5. Muon gan ten mien rieng: nhap ten mien trong WebForge (Cai dat trang > Ten mien rieng) roi xuat lai ZIP.
+
+=== CACH 2: NETLIFY ===
+1. Vao https://app.netlify.com/drop va keo ca thu muc vao.
+2. Gan ten mien: Domain settings > Add a custom domain.
+
+Cac trang:
+  /index.html
+  /du-an/ls-house.html
+  /du-an/ns-house.html
+  /du-an/nha-vuon.html
+  /du-an/can-ho-dich-vu.html
